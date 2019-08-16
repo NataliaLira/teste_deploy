@@ -1,0 +1,10 @@
+<VirtualHost *:80>
+   ServerAdmin webmaster@dummy-host.example.com
+   DocumentRoot "/path/to/app/public"
+
+   <Directory "/path/to/app/public">
+       Options Indexes FollowSymLinks Includes ExecCGI
+       AllowOverride All
+       Require all granted
+   </Directory>
+</VirtualHost>
